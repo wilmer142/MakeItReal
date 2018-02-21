@@ -2,7 +2,7 @@ num = 24
 
 if num >= 10
 	if num <= 20
-		"El numero se encuentra entre 10 y 20"
+		"El numero se encuentra entre 10 y 20 "
 	else
 		"El numero no es menor que 20"
 	end
