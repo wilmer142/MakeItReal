@@ -1,0 +1,1 @@
+IO.copy_stream("texto.txt", "vacio.txt")
