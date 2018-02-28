@@ -24,10 +24,11 @@ class Banco
 		puts "---- 3) Definir Categorias"
 		puts "---- 4) Consultar Categorias"
 		puts "---- 5) Consultar historial"
+		puts "---- 6) Consultar Porcentajes Gasto Categorias"
 		print "Seleccione una opción: "
 
 		opcion = gets.chomp.to_i
-		(opcion >= 1 && opcion <= 5) ? accion(opcion) : (puts "opción no valida")
+		(opcion >= 1 && opcion <= 6) ? accion(opcion) : (puts "opción no valida")
 
 		print "Desea realizar otra acción? (y/n): "
 		continuar = gets.chomp.downcase
@@ -92,11 +93,13 @@ class Banco
 			else
 				puts "No tiene categorias asignadas, consulte la opción 3 para ingresar categorias"
 			end
-		else
+		when 5
 			print "Ingresa el mes a realizar la consulta: "
 			mes = gets.chomp.to_i
 			system "clear"
 			historial(mes)
+		else
+			@persona.porcentaje_categorias
 		end
 	end
 
