@@ -1,7 +1,10 @@
 #Construir una aplicación que permita registrar los ingresos y gastos de una persona, debe existir 
 #suficiente dinero para poder hacer el gasto, se debe poder ver el total de ingresos y gastos para mes particular.
 
+require "./modulo_categorias.rb"
+
 class Movimientos
+	include Categorias
 	attr_accessor :transacciones, :categorias
 end
 
@@ -66,6 +69,11 @@ class Persona < Movimientos
 		@categorias.each do |key, value|
 			puts "--categoria: #{key}, monto maximo: #{value}"
 		end
+	end
+
+	def porcentaje_categorias
+		categorias = CategoriasPorcentaje.new
+		categorias.calcular_porcentaje(@transacciones)
 	end
 
 	private
