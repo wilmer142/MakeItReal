@@ -29,6 +29,7 @@ class Menu
 	def llamar
 		print "Ingrese el contacto a llamar"
 		contacto = gets.chomp
+		if @telefono.
 
 	private
 

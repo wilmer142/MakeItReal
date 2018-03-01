@@ -45,7 +45,7 @@ module Llamada
 		end
 
 		def agregar_contactos(nombre, telefono)
-			
+			if existe_contacto(contacto) ?
 		end
 
 		def existe_contacto(contacto)

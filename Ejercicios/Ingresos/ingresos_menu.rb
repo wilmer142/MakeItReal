@@ -26,7 +26,7 @@ class Banco
 		puts "---- 5) Consultar historial"
 		puts "---- 6) Consultar Porcentajes Gasto Categorias"
 		print "Seleccione una opción: "
-
+ 
 		opcion = gets.chomp.to_i
 		(opcion >= 1 && opcion <= 6) ? accion(opcion) : (puts "opción no valida")
 
