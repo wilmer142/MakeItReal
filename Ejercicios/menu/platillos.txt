@@ -1,0 +1,10 @@
+101, sancocho, 8000, true
+102, mondongo, 11000, true
+103, bandeja paisa, 9000, true
+104, arroz con pollo, 7000, true
+105, ceviche, 8200, false
+106, arroz con camaron, 9000, true
+107, postre tres leches, 3000, true
+108, casuela mariscos, 12000, true
+109, ajiaco, 10500, false
+110, corrientazo, 6000, true
